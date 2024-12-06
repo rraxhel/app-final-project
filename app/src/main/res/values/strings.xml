@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">yu</string>
+    <string name="date_format">yyyy年MM月dd日</string>
+    <string name="hint_selected_date">Selected Date</string>
+
+    <string-array name="mood_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+
+
+</resources>

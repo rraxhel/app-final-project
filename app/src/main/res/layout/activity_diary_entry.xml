@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".d1">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tools"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Back"
+            android:src="@android:drawable/ic_media_previous" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/selectedDateTextView"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/hint_selected_date"
+        android:onClick="showDatePickerDialog"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/moodSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/selectedDateTextView"
+        android:entries="@array/mood_options" />
+
+    <EditText
+        android:id="@+id/diaryEditText"
+        android:layout_width="354dp"
+        android:layout_height="482dp"
+        android:layout_below="@+id/selectedDateTextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:fontFamily="@font/cute"
+        android:gravity="top"
+        android:hint="把所有的不開心都寫出來...！"
+        android:inputType="textMultiLine"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="160dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/diaryEditText"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/brown"
+        android:text="Save Now!"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/delButton"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/diaryEditText"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/addButton"
+        android:background="@drawable/rounded_button"
+        android:text="Delete"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

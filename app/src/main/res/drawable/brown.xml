@@ -1,0 +1,5 @@
+<!-- rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#A08981" /> <!-- 背景颜色 -->
+    <corners android:radius="10dp" /> <!-- 圆角半径，可以根据需要调整 -->
+</shape>

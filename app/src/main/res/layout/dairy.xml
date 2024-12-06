@@ -1,0 +1,111 @@
+<!-- res/layout/d1.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".d1">
+
+    <!-- Toolbar -->
+
+    <!-- Horizontal LinearLayout for dateTextView, moodSpinner, and moodImageView -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tools"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Back"
+            android:src="@android:drawable/ic_media_previous" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/selectedDateTextView"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/hint_selected_date"
+            android:onClick="showDatePickerDialog"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/moodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/mood_options"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/diaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:hint="把所有的不開心都寫出來...！"
+        android:textStyle="bold"
+        android:textColorHint="@color/brown"
+        android:inputType="textMultiLine"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/cute"
+        />
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/but"
+        android:text="Save Now!"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Diary Container -->
+    <LinearLayout
+        android:id="@+id/diaryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

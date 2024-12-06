@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p_5" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="200dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@drawable/white"
+        android:fontFamily="@font/cute"
+        android:gravity="center_vertical|left"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="200dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@drawable/white"
+        android:fontFamily="@font/cute"
+        android:gravity="center_vertical|left"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="121dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/white2"
+        android:fontFamily="@font/cute"
+        android:gravity="center_vertical|left"
+        android:text=" Email:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="121dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/account"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/white2"
+        android:fontFamily="@font/cute"
+        android:gravity="center_vertical|left"
+        android:text=" 密碼:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="318dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/pass"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/brown"
+        android:fontFamily="@font/cute"
+        android:text="登入"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F4EA97">
+
+    <TextView
+        android:layout_width="288dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="62dp"
+        android:text="來點甜甜的點心吧!
+        明天也會是美好的一天喔
+ ฅ^.ˬ.^ฅ"
+        android:textAlignment="center"
+        android:textColor="#635B5B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cute"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="410dp"
+        android:text="0 db"
+        android:textColor="#635B5B"
+        android:textSize="60sp"
+        android:fontFamily="@font/cute"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="345dp"
+        android:layout_height="360dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-36dp"
+        android:src="@drawable/cake" />
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="Start/Pause Recording"
+        android:src="@drawable/returnb" />
+</RelativeLayout>

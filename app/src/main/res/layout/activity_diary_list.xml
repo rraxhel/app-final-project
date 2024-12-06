@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaryListActivity"
+
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tools"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Back"
+            android:src="@android:drawable/ic_media_previous" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/diary_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+
+        />
+
+    <Button
+        android:id="@+id/add_diary_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="新增日記"
+        android:fontFamily="@font/cute"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:backgroundTint="@color/but"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

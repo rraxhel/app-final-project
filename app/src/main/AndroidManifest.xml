@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yu"
+        tools:targetApi="31">
+        <service
+            android:name=".MyIntentService"
+            android:exported="false"></service>
+        <!-- 主 Activity -->
+        <activity
+            android:name=".main"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Yu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 登入 Activity -->
+        <activity
+            android:name=".login"
+            android:theme="@style/Theme.Yu" /> <!-- 註冊 Activity -->
+        <activity
+            android:name=".register"
+            android:theme="@style/Theme.Yu" />
+        <activity
+            android:name=".Chat"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".choose"
+            android:theme="@style/Theme.Yu"
+            android:launchMode="standard"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".page3"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".page2"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".page1"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".d1"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DiaryEntryActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DiaryListActivity"
+            android:theme="@style/AppTheme" />
+        <service android:name=".MyIntentService"
+                    android:exported="false"
+            />
+    </application>
+
+</manifest>

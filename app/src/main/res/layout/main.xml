@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wheat"
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/brown"
+        android:fontFamily="@font/cute"
+        android:gravity="center|center_horizontal"
+        android:paddingTop="20dp"
+        android:text="我們一起來放鬆一下吧!!"
+        android:textAlignment="gravity"
+        android:textColor="@color/wheat"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/upperTextView"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/brown"
+        android:fontFamily="@font/cute"
+        android:gravity="center|center_horizontal"
+        android:paddingTop="16dp"
+        android:text="今天發生什麼事?"
+        android:textAlignment="gravity"
+        android:textColor="@color/wheat"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/wr"
+        android:layout_width="388dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/oo"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/cute"
+        android:gravity="center|left|top"
+        android:paddingTop="18dp"
+        android:text=" 情感日記"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/oo"
+        android:layout_width="388dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/upperTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/cute"
+        android:gravity="center|left|top"
+        android:paddingTop="18dp"
+        android:text=" 大聲吶喊"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/s1TextView"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/oo"
+        android:layout_gravity="center"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-80dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/cute"
+        android:gravity="center|center_horizontal"
+        android:paddingTop="16dp"
+        android:text="釋放心中的不快吧!"
+        android:textAlignment="gravity"
+        android:textColor="@color/wheat"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="109dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/oo"
+        android:layout_alignEnd="@+id/oo"
+        android:layout_marginTop="-119dp"
+        android:layout_marginEnd="36dp"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p_3" />
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="112dp"
+        android:layout_below="@+id/wr"
+        android:layout_alignEnd="@+id/wr"
+        android:layout_marginTop="-118dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p_2" />
+
+    <Button
+        android:id="@+id/talk"
+        android:layout_width="388dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/wr"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/brown"
+        android:fontFamily="@font/cute"
+        android:gravity="center|left|top"
+        android:paddingTop="18dp"
+        android:text=" 小石頭"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/s3TextView"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/talk"
+        android:layout_gravity="center"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-79dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/cute"
+        android:gravity="center|center_horizontal"
+        android:paddingTop="16dp"
+        android:text="告訴我一切吧!"
+        android:textAlignment="gravity"
+        android:textColor="@color/wheat"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="112dp"
+        android:layout_below="@+id/talk"
+        android:layout_alignEnd="@+id/talk"
+        android:layout_marginTop="-118dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p_1" />
+
+    <TextView
+        android:id="@+id/s2TextView"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/wr"
+        android:layout_gravity="center"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-79dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/cute"
+        android:gravity="center|center_horizontal"
+        android:paddingTop="16dp"
+        android:text="寫下你的感受吧!"
+        android:textAlignment="gravity"
+        android:textColor="@color/wheat"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
+

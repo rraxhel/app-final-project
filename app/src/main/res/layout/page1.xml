@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#94BFDE">
+
+    <TextView
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="129dp"
+        android:text="看起來今天的你很冷靜呢!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cute"/>
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="97dp"
+        android:text="又或者有甚麼好事發生嗎!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cute"/>
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="52dp"
+        android:text="( ˶'ᵕ'˶)⸝"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cute"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="410dp"
+        android:text="0 db"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:fontFamily="@font/cute"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="273dp"
+        android:layout_height="271dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="67dp"
+        android:src="@drawable/flower" />
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="Start/Pause Recording"
+        android:src="@drawable/returnw" />
+</RelativeLayout>
