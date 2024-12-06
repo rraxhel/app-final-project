@@ -25,4 +25,6 @@
 
 APP介面
 ===
-<p align="left"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/></p>
+<p align="left"><img src="picture/APP login.png" width="280" height="500"/> <img src="picture/APP home.png" width="280" height="500"/></p>
+<p align="left"><img src="picture/APP shout1.png" width="280" height="500"/> <img src="picture/APP shout2.png" width="280" height="500"/></p>
+<p align="left"><img src="picture/APP diary.png" width="280" height="500"/> <img src="picture/APP chat.png" width="280" height="500"/>/p>
